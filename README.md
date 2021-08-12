@@ -13,5 +13,5 @@ mysql -u root -p < ~/db/employees.sql
 最後刪除>10天檔案 (-type f)
 
 ## 題目3 Restful API
-不會寫python
+不會寫程式
 
