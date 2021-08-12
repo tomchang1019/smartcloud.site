@@ -1,4 +1,4 @@
-## 題目1 建立 laravel站台 php-7.4, mysql 5.7, nginx:latest
+## 題目1 建立 laravel站台 (php-7.4, mysql 5.7, nginx:latest)
 centos 7 預先安裝 docker & docker-compose，直接執行smartcloud-laravel-lemp.sh
 
 smartclouds-laravel-lemp目錄內有 Dockerfile / docker-compose.yml /nginx設定
