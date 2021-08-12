@@ -2,6 +2,7 @@
 centos 7 預先安裝 docker & docker-compose，直接執行smartcloud-laravel-lemp.sh
 
 smartclouds-laravel-lemp目錄內有 Dockerfile / docker-compose.yml /nginx設定
+PC上修改c:/windows/system32/drivers/etc/hosts，對應IP smartclouds.site
 
 ## 題目2 database 
 ```
