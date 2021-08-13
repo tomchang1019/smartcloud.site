@@ -18,5 +18,35 @@ script內使用 for...in 抓取每個schema name執行備份，並未使用sed�
 但執行結果失敗
 
 ## 題目3 Restful API
-不會寫程式
+
+```
+from flask import Flask, jsonify, request, render_template
+
+app = Flask(__name__)
+
+user1 = {
+    "id":1,
+    "name":"tom",
+    "description":"hello! my name is tom.",
+}
+user2 = {
+    "id":2,
+    "name":"kelly",
+    "description":"hello! my name is kelly.",
+}
+
+users =[user1,user2]
+
+@app.route('/user', methods=['GET'])
+def userList():
+    return jsonify(users)
+
+@app.route('/user/<int:user_id>', methods=['GET'])
+def findUser(user_id):
+    return jsonify(users[user_id-1])
+
+if __name__ == '__main__':
+    app.debug = False
+    app.run(host='localhost', port=5000)
+```
 
